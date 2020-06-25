@@ -1,71 +1,63 @@
-#navigationBar {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 30px;
-  width: 90%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#navigationBar u1 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  background-color: #eeeeee;
-  overflow: visible;
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
 }
-#navigationBar u1 > li {
-  display: block;
+
+.navbar a {
   float: left;
-  height: auto;
-  width: 120px;
-}
-#navigationBar li > a {
-  display: block;
-  padding: 0 0 0 10px;
-  height: 100%;
-  width: 109px;
-  border-right: 1px black solid;
-  line-height: 30px;
-  font-family: sans-serif;
-  font-size: 17px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  background-color: #eeeeee;
-  color: #5d5636;
 }
-#navigationBar u1 u1 {
-  margin-top: 2px;
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
   display: none;
-  position: static;
-  height: auto
-  width: 160px;
-  border 1px #666666 solid;
-  background-color: #dddddd;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-#navigationBar u1 u1 li {
-  position: relative;
+
+.dropdown-content a {
   float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  height: 28px;
-  width: 100%;
-  border: none;
+  text-align: left;
 }
-#navigationBar u1 u1 li > a {
-  height: 100%;
-  width: 96%;
-  padding: 0 0 0 4%;
-  line-height: 28px;
-  background-color: transparent;
-  border: none;
-  color: #000000;
-  font-size: 12px;
-  font-style: normal;
-  }
-#navigationBar li:hover > a {
-  color: #220000;
-  background-color: #eeeabe;
+
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-#navitationBar li:hover > u1 {
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
