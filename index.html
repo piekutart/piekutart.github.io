@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Martusia Artystka</title>
-		<style type="text/css">
-		</style>
-		<link href="styles.css">
-	</head>
-	<body>
-		<nav id="navigationBar">
-			<u1>
-				<li><a href="page1.html"> Strona główna</a></li>
-				<li><a href="page2.html"> Twórczość</a></li>
-				<u1>
-					<li><a href="page2.html"> Katalog 1</a></li>
-					<li><a href="page2.html"> Katalog 2</a></li>
-					<li><a href="page2.html"> Katalog 3</a></li>
-					<li><a href="page2.html"> Katalog 4</a></li>
-					<li><a href="page2.html"> Katalog 5</a></li>
-				</u1>
-				</li>
-				<li><a href="page3.html">Biografia</a></li>
-				<li><a href="page3.html">Zamówienia</a></li>
-					<u1>
-						<li><a href="page3.html"> Zamówienia indywidualne</a></li>
-						<li><a href="page3.html"> Zamówienia z katalogów 2</a></li>
-						<li><a href="page3.html"> Zamówienia projektów</a></li>
-					</u1>
-						<li><a href="page3.html"> Kontakt </a></li>
-		</nav>
-		
-		
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Witamy!</h1>
-				<p>1 strona html strony internetowej</em> Będzie rozbudowa <a href="/about">W rozbudowie</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:piekutart@tutamail.com">email</a></li>
-        		<li><a href="https://github.com/piekutart">github.com/piekutart</a></li>
-			</ul>
-		</footer>
-		<img src="Images/obrazek2.jpeg">
-	</body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
 </html>
